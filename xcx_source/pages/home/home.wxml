@@ -1,8 +1,0 @@
-<!--<view class="menu">
-	<icon><image src="http://dev.iprotime.com/public/dd/xcx/menu.png"></image></icon>
-</view>-->
-<scroll-view scroll-y="false" class="all">
-	<view class="topimg" animation="{{topimg}}"><image src="http://dev.iprotime.com/public/dd/xcx/homeimg4.png"></image></view>
-	<view class="starbutton" bindtap="starLoginTap" animation="{{buttonData}}">开启我的臻享荟</view>
-	<view class="borderline" animation="{{borderline}}"></view>
-</scroll-view>

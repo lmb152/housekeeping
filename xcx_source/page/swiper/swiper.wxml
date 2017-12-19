@@ -1,0 +1,9 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="bindchange " current="{{current}}">
+  <block wx:for="{{imgUrls}}" wx:key="unique" >
+    <swiper-item>
+      <scroll-view scroll-y="true">
+        <image mode="widthFix" data-src="{{imgUrls}}" src="{{item.img}}" class="slide-image"  bindtap="swipclick"/>
+      </scroll-view>
+    </swiper-item>
+  </block>
+</swiper>

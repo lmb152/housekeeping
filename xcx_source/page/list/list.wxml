@@ -1,0 +1,13 @@
+ <view class="list_item">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <view class="item_info" data-alpha-beta="{{index}}">
+    	<view class="pic_view">
+        	<view class="imgsize" ><image data-src="{{imgUrls}}" data-first="{{index}}" src="{{item.thumbnail}}" bindtap="swipclick" mode="widthFix"></image></view>
+        </view>
+        <block wx:if="{{item.isedit}}">
+          <view data-ddid="{{item.nid}}" bindtap="swipdelete" class="pcttitle">删除</view>
+        </block>
+        
+    </view>
+  </block>
+  </view>

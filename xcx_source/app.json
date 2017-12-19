@@ -1,20 +1,20 @@
 {
-    "pages": [
-    	"pages/login/login",
-    	"pages/my/my",
-    	"pages/index/index",
-    	"pages/home/home",
-		"pages/detail2/detail2",
-		"pages/map/map",
-		"pages/swiper2/swiper2",
-		"pages/trial/trial"
-    ],
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#012c35",
-        "navigationBarTitleText": "",
-        "navigationBarTextStyle": "white",
-        "enablePullDownRefresh":true
-    },
-    "debug": true
+  "pages": [
+    "page/list/list",
+    "page/swiper/swiper"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "设计稿演示",
+    "navigationBarBackgroundColor": "#060a2d",
+    "backgroundColor": "#fbf9fe",
+    "enablePullDownRefresh":true
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
 }

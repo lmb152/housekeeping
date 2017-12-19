@@ -1,4 +1,0 @@
-<view class="kvimg" animation="{{hiddenkv}}">
-	<view class="countnum">{{countdown}}</view>
-	<image src="http://dev.iprotime.com/public/dd/x4p2.jpg" mode="aspectFill"  animation="{{startanimData}}"></image>
-</view>

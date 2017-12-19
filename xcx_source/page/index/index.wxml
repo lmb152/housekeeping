@@ -1,0 +1,10 @@
+<scroll-view scroll-y="true" scroll-x="false" class="scroll_list" bindscrolltolower="swiperchange"> 
+	<view class="list_item">
+	<block wx:for="{{itemarray}}" wx:key="unique">
+		<view class="item_info" bindtap="godetails" data-alpha-beta="{{item.nid}}">
+		  	<view class="imgsize" ><image src="{{item.thumbnail}}" mode="widthFix"></image></view>
+		  	<view class="pcttitle">{{item.title}}</view>
+		</view>
+	</block>
+	</view>
+</scroll-view>
