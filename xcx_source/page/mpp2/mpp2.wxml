@@ -1,0 +1,58 @@
+<view class="container">
+	<view class="listset">
+		  <view>全部礼品</view>
+		  <text>|</text>
+		  <view>按新品</view>
+		  <text>|</text>
+		  <view>按功能</view>
+		  <text>|</text>
+		  <view>浏览模式</view>
+		  <icon><image src="{{setlistbtn0}}" mode="widthFix" bindtap="setlistshow0"></image></icon>
+		  <icon><image src="{{setlistbtn1}}" mode="widthFix" bindtap="setlistshow1"></image></icon>
+	</view>
+	<scroll-view scroll-y="true" scroll-x="false" class="scroll_list" bindscrolltolower="swiperchange"> 
+	  <view class="pctlist" wx:if="{{listType==0}}">
+	  <block wx:for="{{itemarray}}" wx:key="unique">
+	  	<view class="pctinfo" wx:if="{{item.itemtype==0}}">
+		  	<view class="imgsize" bindtap="gospp"><image src="http://dev.iprotime.com/xcx/images/image/pctpic{{item.imgurl}}.jpg" mode="widthFix"></image></view>
+		  	<view class="pcttitle">{{item.itemname}}</view>
+		  	<view class="stitle">{{item.itemsname}}</view>
+		  	<view class="price"><text>{{item.price}}</text>/<text>{{item.pointinfo}}</text>ml</view>
+		  	<view class="addbutton"><icon><image src="{{item.addimgurl}}" mode="widthFix"></image></icon><view class="button2">即将发布</view></view>
+	  	</view>
+	  	<view class="pctinfo" wx:else>
+		  	<view class="imgsize" bindtap="gospp"><image src="http://dev.iprotime.com/xcx/images/image/pctpic{{item.imgurl}}.jpg" mode="widthFix"></image></view>
+		  	<view class="pcttitle">{{item.itemname}}</view>
+		  	<view class="stitle">{{item.itemsname}}</view>
+		  	<view class="price"><text>{{item.price}}</text>/<text>{{item.pointinfo}}</text>ml</view>
+		  	<view class="addbutton"><icon><image src="{{item.addimgurl}}" mode="widthFix"></image></icon><view class="button" bindtap="gospp">加入礼单</view></view>
+	  	</view>
+	  </block>
+	  </view>
+	  <view class="pctlist" wx:else>
+	  <block wx:for="{{itemarray}}" wx:key="unique">
+	  	<view class="pctinfo2" wx:if="{{item.itemtype==0}}">
+		  	<view class="imgsize" bindtap="gospp"><image src="http://dev.iprotime.com/xcx/images/image/pctpic{{item.imgurl}}.jpg" mode="widthFix"></image></view>
+		  	<view class="rowlist">
+			  	<view class="pcttitle">{{item.itemname}}</view>
+			  	<view class="stitle">{{item.itemsname}}</view>
+			  	<view class="stitle" style="margin-top:5px;">{{item.itemsname2}}</view>
+			  	<view class="price"><text>{{item.price}}</text>/<text>{{item.pointinfo}}</text>ml</view>
+			  	<view class="addbutton"><icon><image src="{{item.addimgurl}}" mode="widthFix"></image></icon><view class="button2">即将发布</view></view>
+		  	</view>
+	  	</view>
+	  	<view class="pctinfo2" wx:else>
+		  	<view class="imgsize" bindtap="gospp"><image src="http://dev.iprotime.com/xcx/images/image/pctpic{{item.imgurl}}.jpg" mode="widthFix"></image></view>
+			  	<view class="rowlist">
+			  	<view class="pcttitle">{{item.itemname}}</view>
+			  	<view class="stitle">{{item.itemsname}}</view>
+			  	<view class="stitle" style="margin-top:5px;">{{item.itemsname2}}</view>
+			  	<view class="price"><text>{{item.price}}</text>/<text>{{item.pointinfo}}</text>ml</view>
+			  	<view class="addbutton"><icon><image src="{{item.addimgurl}}" mode="widthFix"></image></icon><view class="button" bindtap="gospp">加入礼单</view></view>
+		  	</view>
+	  	</view>
+	  </block>
+	  </view>
+	  <view  class="loadmore">努力加载中...</view>
+	</scroll-view>
+</view>

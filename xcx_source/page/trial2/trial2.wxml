@@ -1,0 +1,81 @@
+<view class="cartTop" animation="{{topcart}}">
+	<swiper indicator-dots="true" autoplay="true" interval="2000" duration="500" circular="true" style="border:none;">
+		    <swiper-item>
+		      <image src="http://dev.iprotime.com/xcx/images/image/spppic1.jpg" mode="aspectFit"/>
+		    </swiper-item>
+		    <swiper-item>
+		      <image src="http://dev.iprotime.com/xcx/images/image/pic2.jpg" mode="aspectFit"/>
+		    </swiper-item>
+		    <swiper-item>
+		      <image src="http://dev.iprotime.com/xcx/images/image/pic3.jpg" mode="aspectFit"/>
+		    </swiper-item>
+	</swiper>
+	<view class="cart"><image src="http://dev.iprotime.com/xcx/images/image/cart.png" mode="widthFix"></image><text>兑礼清单</text></view>
+</view>
+<view class="huiceng" animation="{{topcartbg}}" bindtap="hiddencart"></view>
+
+<view class="Tophead">
+	<view class="fenlei" bindtap="fenleilist"><image src="http://dev.iprotime.com/xcx/images/image/fenlei.png" mode="widthFix"></image></view>
+	<text>|</text>
+	<view class="logo"><image src="http://dev.iprotime.com/xcx/images/image/logo.png" mode="widthFix"></image></view>
+	<text>|</text>
+	<view class="cart" bindtap="showaddcart"><image src="http://dev.iprotime.com/xcx/images/image/cart.png" mode="widthFix"></image></view>
+</view>
+
+<view class="fenleiicon" bindtap="fenleilist" style="display:{{showhide}}"><image src="../../image/fenleixicon.jpg" mode="widthFix"></image></view>
+<scroll-view class="fenleilist" animation="{{fenlei}}" scroll-y="true">
+	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">面膜</text><text class="text2">></text></view></navigator>
+	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">清洁</text><text class="text2">></text></view></navigator>
+	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">特殊护理</text><text class="text2">></text></view></navigator>
+	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">滋润</text><text class="text2">></text></view></navigator>
+	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">保湿</text><text class="text2">></text></view></navigator>
+	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">眼部护理</text><text class="text2">></text></view></navigator>
+	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">美白</text><text class="text2">></text></view></navigator>
+	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">特别护理or面膜</text><text class="text2">></text></view></navigator>
+</scroll-view>
+<view class="huiceng2" animation="{{fenleibg}}" bindtap="hiddenfenleilist"></view>
+
+
+<view class="page">
+	<view class="blocks block_01" style="display:none;">
+		<image src="http://dev.iprotime.com/xcx/images/lamer_02_1.jpg" mode="aspectFill"></image>
+	</view>
+	<view class="blocks block_02">
+		<image src="http://dev.iprotime.com/xcx/images/lamer_03_1.jpg" mode="aspectFill" style="display:none;"></image>
+		<view style="width:100%; line-height:300%; color:#fff; font-size:16px; text-align:center;">立即申领臻享试用</view>
+		<view class="form_area" style="top:auto;">
+			<input class="name" type="text" placeholder="姓名" bindinput="bind_name" placeholder-class="placeholder"/>
+			<input class="mobile" type="text" placeholder="手机号" bindinput="bind_mobile" placeholder-class="placeholder"/>
+			<input class="email" type="text" placeholder="邮箱" bindinput="bind_email" placeholder-class="placeholder"/>
+			<picker class="city" bindchange="bind_city" value="{{city_index}}" range="{{city_array}}">
+				<view class="picker">
+					{{city_array[city_index]}}
+				</view>
+			</picker>
+			<picker class="store" bindchange="bind_store" value="{{store_index}}" range="{{store_array}}">
+				<view class="picker">
+					{{store_array[store_index]}}
+				</view>
+			</picker>
+			<text class="check_route" bindtap="check_route">查看专柜路线</text>
+			<view class="agreement" bindtap="agreement">
+				<view class="is_or_no"><image src="{{is_or_no}}"></image></view><text>同意品牌对于本人个人信息的收集，并同意接受品牌发送的商业信息，若拒绝收到品牌发送的商业信息，请取消打勾。</text>
+			</view>
+			<text class="submit" bindtap="confirm_submit">确认提交</text>
+		</view>
+	</view>
+	<view class="blocks block_03" style="display:none;">
+		<image src="http://dev.iprotime.com/xcx/images/lamer_04_1.jpg" mode="aspectFill"></image>
+	</view>
+	<view class="blocks block_04" style="display:none;">
+		<image src="http://dev.iprotime.com/xcx/images/lamer_05_1.jpg" mode="aspectFill"></image>
+	</view>
+	<view class="blocks block_05" style="display:none;">
+		<image src="http://dev.iprotime.com/xcx/images/lamer_06_1.jpg" mode="aspectFill"></image>
+		<video class="video" src="http://dev.iprotime.com/xcx/images/video.mp4"></video>
+	</view>
+	<view class="blocks block_06" style="display:none;">
+		<image src="http://dev.iprotime.com/xcx/images/lamer_07_1.jpg" mode="aspectFill"></image>
+	</view>
+</view>
+

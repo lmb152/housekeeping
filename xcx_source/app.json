@@ -1,14 +1,48 @@
 {
   "pages": [
-    "page/list/list",
-    "page/swiper/swiper"
+  	"page/index/index",
+  	"page/pano/pano",
+  	"page/club/club",
+  	"page/spp/spp",
+  	"page/mpp/mpp",
+  	"page/mpp2/mpp2",
+  	"page/trial/trial",
+  	"page/trial2/trial2",
+  	"page/map/map"
   ],
   "window": {
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "设计稿演示",
+    "navigationBarTitleText": "雅诗兰黛",
     "navigationBarBackgroundColor": "#060a2d",
+    "backgroundColor": "#fbf9fe"
+  },
+  "tabBar":{
+    "color": "#09092b",
+    "selectedColor": "#09092b",
+    "borderStyle": "white",
     "backgroundColor": "#fbf9fe",
-    "enablePullDownRefresh":true
+    "list": [{
+      "pagePath": "page/index/index",
+      "iconPath": "image/bar_index_off.png",
+      "selectedIconPath": "image/bar_index_on.png",
+      "text": "首页"
+    },{
+      "pagePath": "page/mpp/mpp",
+      "iconPath": "image/bar_index3.png",
+      "selectedIconPath": "image/bar_index3.png",
+      "text": "会员尊享"
+    },{
+      "pagePath": "page/trial/trial",
+      "iconPath": "image/bar_index4.png",
+      "selectedIconPath": "image/bar_index4.png",
+      "text": "试用申领"
+    },
+    {
+      "pagePath": "page/map/map",
+      "iconPath": "image/bar_index2.png",
+      "selectedIconPath": "image/bar_index2.png",
+      "text": "专柜查询"
+    }]
   },
   "networkTimeout": {
     "request": 10000,

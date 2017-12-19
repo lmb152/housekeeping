@@ -1,0 +1,23 @@
+.index{
+	width:100%;
+	height:auto;
+	display:flex;
+	flex-direction: row;
+	position:relative;
+}
+.index .box{
+	position:absolute;
+	top:20px;
+	bottom:20px;
+	left:20px;
+	right:20px;
+
+}
+.index .box image{
+	width:100%;
+}
+.index .bg{
+	position:relative;
+	z-index:1;
+	width:100%;
+}

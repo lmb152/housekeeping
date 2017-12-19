@@ -1,0 +1,33 @@
+<view class="index">
+   <image src="../../image/kv.jpg" mode="widthFix" class="bg"></image>
+</view>
+<view class="index">
+   <view class="box" animation="{{animationData}}">
+   	<image src="../../image/img1.png" mode="widthFix"></image>
+   </view>
+   <image src="../../image/imgbg.png" mode="widthFix" class="bg"></image>
+</view>
+<view class="index">
+   <view class="box" animation="{{animationData}}">
+   	<image src="../../image/img2.png" mode="widthFix"></image>
+   </view>
+   <image src="../../image/imgbg.png" mode="widthFix" class="bg"></image>
+</view>
+<view class="index">
+   <view class="box" animation="{{animationData}}">
+   	<image src="../../image/img3.png" mode="widthFix"></image>
+   </view>
+   <image src="../../image/imgbg.png" mode="widthFix" class="bg"></image>
+</view>
+<view class="index">
+   <view class="box" animation="{{animationData}}">
+   	<image src="../../image/img4.png" mode="widthFix"></image>
+   </view>
+   <image src="../../image/imgbg.png" mode="widthFix" class="bg"></image>
+</view>
+<view class="index">
+   <view class="box" animation="{{animationData}}">
+   	<image src="../../image/img5.png" mode="widthFix"></image>
+   </view>
+   <image src="../../image/imgbg.png" mode="widthFix" class="bg"></image>
+</view>

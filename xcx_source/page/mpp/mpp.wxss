@@ -1,0 +1,185 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height:100%;
+  position:relative;
+  z-index:2;
+}
+.scroll_list{
+	position:absolute;
+	z-index:1;
+	width:100%;
+	top:62px;
+	bottom:0;
+	left:0;
+	right:0;
+}
+.pctlist{
+  width:96%;
+  height: auto;
+  margin:0 auto 0;
+}
+.pctinfo{
+  width:44%;
+  margin:20px 3%;
+  float:left;
+  display: flex;
+  flex-direction: column;
+  text-align:center;
+  justify-content: space-between;
+}
+
+.pctinfo .imgsize{
+	margin-bottom:20rpx;
+}
+.pctinfo .imgsize image{
+	width:100%;
+}
+.pctinfo .pcttitle{
+	font-family:微软雅黑;
+	font-size:16px;
+	color:#313131;
+	line-height:150%;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.pctinfo .stitle{
+	font-family:微软雅黑;
+	font-size:14px;
+	color:#6a6a6a;
+	line-height:150%;
+	height:25px;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.pctinfo .price{
+	font-family:微软雅黑;
+	font-size:16px;
+	color:#313131;
+	line-height:250%;
+}
+
+
+.pctinfo2{
+  width:96%;
+  margin:20px 3%;
+  display: flex;
+  flex-direction: row;
+  text-align:center;
+  justify-content: space-around;
+}
+.pctinfo2 .imgsize{
+	width:45%;
+}
+.pctinfo2 .imgsize image{
+	width:100%;
+}
+.pctinfo2 .rowlist{
+	width:45%;
+	padding-top:20px;
+}
+.pctinfo2 .pcttitle{
+	font-family:微软雅黑;
+	font-size:16px;
+	color:#313131;
+	line-height:150%;
+	overflow:hidden;
+	white-space:nowrap;
+	text-align:left;
+}
+.pctinfo2 .stitle{
+	font-family:微软雅黑;
+	font-size:14px;
+	color:#6a6a6a;
+	line-height:150%;
+	height:25px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-align:left;
+}
+.pctinfo2 .price{
+	font-family:微软雅黑;
+	font-size:16px;
+	color:#313131;
+	line-height:250%;
+	text-align:left;
+}
+
+
+
+.addbutton{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  height:auto;
+  justify-content: center;
+}
+.addbutton .button{
+	width:120px;
+	line-height:250%;
+	font-family:微软雅黑;
+	font-size:14px;
+	background:#040a2c;
+	color:#fff;
+	text-align:center;
+}
+.addbutton .button2{
+	width:120px;
+	line-height:250%;
+	font-family:微软雅黑;
+	font-size:14px;
+	background:#bfbfbf;
+	color:#fff;
+	text-align:center;
+}
+.addbutton icon{
+	width:50px;
+	align-items: center;
+}
+.addbutton icon image{
+	width:65%;
+}
+.listset{
+	display: flex;
+    flex-direction: row;
+	font-family:微软雅黑;
+	font-size:14px;
+	color:#313131;
+	width:98%;
+	height:60px;
+	line-height:60px;
+	padding:0 1%;
+	border-top:1px solid #bfbfbf;
+	border-bottom:1px solid #bfbfbf;
+	position:fixed;
+	top:0;
+	z-index:2;
+	background:#fff;
+	justify-content: space-around;
+}
+.listset view{
+	margin:0 2px;
+}
+.listset text{
+	color:#bfbfbf;
+	font-size:20px;
+}
+.listset icon{
+	width:20px;
+	height:20px;
+	margin:10px 4px 0;
+}
+.listset icon image{
+	width:100%;
+}
+.loadmore{
+	width:100%;
+	text-align:center;
+	font-size:14px;
+	line-height:300%;
+	color:#999;
+}
+
+
+

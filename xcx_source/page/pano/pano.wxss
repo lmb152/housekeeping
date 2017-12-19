@@ -1,0 +1,24 @@
+.index{
+	width:100%;
+	height:auto;
+	position:relative;
+}
+.index image{
+	width:100%;
+	display:block;
+}
+.index .qimg{
+	width:100%;
+	position:absolute;
+	top:0;
+	display:block;
+}
+.spp{
+	width:100%;
+	height:auto;
+	position:relative;
+}
+.spp image{
+	width:100%;
+	display:block;
+}

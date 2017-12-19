@@ -1,0 +1,180 @@
+/**map.wxss**/
+page{ width:100%; background: #fff;}
+.page{ width:100%; background: #060a2d; margin-top:62px;}
+.blocks{ width: 100%; position: relative;}
+.block_01 image{ display:block; width: 750rpx; height: 1383rpx;}
+.block_02 image{ display:block; width: 750rpx; height: 1029rpx;}
+.block_03 image{ display:block; width: 750rpx; height: 617rpx;}
+.block_04 image{ display:block; width: 750rpx; height: 1224rpx;}
+.block_05 image{ display:block; width: 750rpx; height: 629rpx;}
+.block_06 image{ display:block; width: 750rpx; height: 543rpx;}
+.video{ position: absolute; display: block; width: 680rpx; height: 420rpx; left: 35rpx; top: 25%;}
+.form_area{ position: absolute; width: 80%; display: table; left: 10%; top: 20%;}
+.form_area input{ width: 100%; height: 70rpx; padding-left: 4%; font-size: 26rpx; border: 1px solid #fff; margin-top: 20rpx; box-sizing: border-box; color: #000;}
+.picker{ width: 100%; height: 70rpx; padding-left: 4%; font-size: 26rpx; border: 1px solid #fff; margin-top: 20rpx; box-sizing: border-box; line-height: 70rpx; color: #ffffff; background: url(http://dev.iprotime.com/xcx/images/jt.png) no-repeat; background-size: contain; background-position: 550rpx center;}
+.placeholder{ color: #000;}
+.is_or_no{ width: 28rpx; display: table; float: left;}
+.is_or_no image{ width:28rpx; height: 28rpx;}
+.agreement{ margin-top: 20rpx;}
+.agreement text{ font-size: 28rpx; color: #ffffff; display: table; padding-left: 10rpx; line-height: 30rpx;}
+.submit{ width: 100%; height: 70rpx; display: block; margin: 30rpx auto 0; line-height: 70rpx; background: #ffffff; color: #333333; font-size: 30rpx; text-align: center;}
+.check_route{ width: 100%; height: 70rpx; display: block; margin: 20rpx auto 0; line-height: 70rpx; color: #ffffff; border: 1px solid #fff; font-size: 30rpx; text-align: center; box-sizing: border-box;}
+
+
+.Tophead{
+	width:100%;
+	height:60px;
+	border-top:1px solid #cfcfcf;
+	border-bottom:1px solid #cfcfcf;
+	background:#fff;
+	position:fixed;
+	top:0;
+	z-index:1;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.Tophead .fenlei{
+	width:23px;
+	padding-top:12px;
+}
+.Tophead .logo{
+	width:160px;
+	padding-top:18px;
+}
+.Tophead .cart{
+	width:28px;
+    padding-top:15px;
+}
+.Tophead image{
+	width:100%;
+}
+.Tophead text{
+	color:#bfbfbf;
+	font-size:20px;
+	padding-top:20px;
+}
+
+
+
+.fenleilist{
+	width:50%;
+	height:auto;
+	background:#fff;
+	display: flex;
+    flex-direction: column;
+    position:fixed;
+    top:62px;
+    left:-50%;
+    z-index:9999;
+    bottom:0;
+}
+.fenleilist view{
+	height:50px;
+	line-height:50px;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom:1px solid #cfcfcf;
+}
+.fenleilist .text1{
+	width:75%;
+	font-size:16px;
+	color:#141939;
+	text-align:left;
+	margin-left:10%;
+}
+.fenleilist .text2{
+	width:15%;
+	font-size:16px;
+	color:#141939;
+	text-align:left;
+}
+.huiceng2{
+	width:100%;
+	height:100%;
+	position:fixed;
+	left:-100%;
+	z-index:2;
+	background:#000;
+	opacity:0.2;
+	top:0;
+}
+.fenleiicon{
+	display:in-block;
+	width:56px;
+	height:62px;
+	position:fixed;
+	z-index:2;
+	top:0;
+	left:0;
+	overflow:hidden;
+}
+.fenleiicon image{
+	width:100%;
+}
+
+
+
+
+
+
+.cartTop{
+	width:100%;
+	height:auto;
+	background:#fff;
+	position:fixed;
+	top:-250px;
+	z-index:3;
+}
+.cartTop .cart{
+	width:25px;
+    padding-top:15px;
+    position:absolute;
+    top:60px;
+    left:20px;
+    text-align:center;
+    font-size:14px;
+}
+.cartTop .cart text{
+	width:25px;
+	text-align:center;
+	margin-top:10px;
+}
+.cartTop .cart image{
+	width:100%;
+	margin-bottom:5px;
+}
+.huiceng{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:-100%;
+	z-index:2;
+	background:#000;
+	opacity:0.2;
+}
+
+swiper{ width:100%; overflow: hidden; height:475rpx; border-bottom: 1rpx solid #cfcfcf;}
+swiper-item{display:block; width:100%;}
+swiper-item image{ display:block; width: 100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

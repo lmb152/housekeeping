@@ -1,0 +1,18 @@
+<view class="index">
+  <image src="http://dev.iprotime.com/public/dd/imgsrc2/bg.png" mode="widthFix"></image>
+  <block wx:for="{{itemsrc}}" wx:key="unique">
+  	<image src="{{item.src}}" mode="widthFix" style="opacity:{{item.opacity}};" class="qimg"></image>
+  </block>
+</view>
+<view class="spp">
+	<image src="http://dev.iprotime.com/public/dd/imgsrc2/climg_01.png" mode="widthFix"></image>
+	<image src="http://dev.iprotime.com/public/dd/imgsrc2/climg_02.png" mode="widthFix"></image>
+	<image src="http://dev.iprotime.com/public/dd/imgsrc2/climg_03.png" mode="widthFix"></image>
+	<image src="http://dev.iprotime.com/public/dd/imgsrc2/climg_04.png" mode="widthFix"></image>
+	<image src="http://dev.iprotime.com/public/dd/imgsrc2/climg_05.png" mode="widthFix"></image>
+	<image src="http://dev.iprotime.com/public/dd/imgsrc2/climg_06.png" mode="widthFix"></image>
+	<image src="http://dev.iprotime.com/public/dd/imgsrc2/climg_07.png" mode="widthFix"></image>
+	<image src="http://dev.iprotime.com/public/dd/imgsrc2/climg_08.png" mode="widthFix"></image>
+	<image src="http://dev.iprotime.com/public/dd/imgsrc2/climg_09.png" mode="widthFix"></image>
+	<image src="http://dev.iprotime.com/public/dd/imgsrc2/climg_10.png" mode="widthFix"></image>
+</view>

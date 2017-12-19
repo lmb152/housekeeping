@@ -1,10 +1,151 @@
-<scroll-view scroll-y="true" scroll-x="false" class="scroll_list" bindscrolltolower="swiperchange"> 
-	<view class="list_item">
-	<block wx:for="{{itemarray}}" wx:key="unique">
-		<view class="item_info" bindtap="godetails" data-alpha-beta="{{item.nid}}">
-		  	<view class="imgsize" ><image src="{{item.thumbnail}}" mode="widthFix"></image></view>
-		  	<view class="pcttitle">{{item.title}}</view>
-		</view>
-	</block>
-	</view>
+<view class="cartTop" animation="{{topcart}}">
+	<swiper indicator-dots="true" autoplay="true" interval="2000" duration="500" circular="true" style="border:none;">
+		    <swiper-item>
+		      <image src="http://dev.iprotime.com/xcx/images/image/spppic1.jpg" mode="widthFix"/>
+		    </swiper-item>
+		    <swiper-item>
+		      <image src="http://dev.iprotime.com/xcx/images/image/pic2.jpg" mode="widthFix"/>
+		    </swiper-item>
+		    <swiper-item>
+		      <image src="http://dev.iprotime.com/xcx/images/image/pic3.jpg" mode="widthFix"/>
+		    </swiper-item>
+	</swiper>
+	<view class="cart"><image src="http://dev.iprotime.com/xcx/images/image/cart.png" mode="widthFix"></image><text>兑礼清单</text></view>
+</view>
+<view class="huiceng" animation="{{topcartbg}}" bindtap="hiddencart"></view>
+<view class="Tophead">
+	<view class="fenlei" bindtap="fenleilist"><image src="http://dev.iprotime.com/xcx/images/image/fenlei.png" mode="widthFix"></image></view>
+	<text>|</text>
+	<view class="logo"><image src="http://dev.iprotime.com/xcx/images/image/logo.png" mode="widthFix"></image></view>
+	<text>|</text>
+	<view class="cart" bindtap="showaddcart"><image src="http://dev.iprotime.com/xcx/images/image/cart.png" mode="widthFix"></image></view>
+</view>
+
+<view class="fenleiicon" style="display:{{showhide}}"><image src="../../image/fenleixicon.jpg" mode="widthFix"></image></view>
+<scroll-view class="fenleilist" animation="{{fenlei}}" scroll-y="true">
+	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">面膜</text><text class="text2">></text></view></navigator>
+	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">清洁</text><text class="text2">></text></view></navigator>
+	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">特殊护理</text><text class="text2">></text></view></navigator>
+	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">滋润</text><text class="text2">></text></view></navigator>
+	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">保湿</text><text class="text2">></text></view></navigator>
+	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">眼部护理</text><text class="text2">></text></view></navigator>
+	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">美白</text><text class="text2">></text></view></navigator>
+	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">特别护理or面膜</text><text class="text2">></text></view></navigator>
+	<navigator url="../pano/pano" bindtap="goToTrial3"><view><text class="text1">重力360</text><text class="text2">></text></view></navigator>
+	<navigator url="../club/club" bindtap="goToTrial3"><view><text class="text1">倩碧CL</text><text class="text2">></text></view></navigator>
 </scroll-view>
+<view class="huiceng2" animation="{{fenleibg}}" bindtap="hiddenfenleilist"></view>
+
+<view class="page {{fixed}}" style="position:{{pageshow}}">
+	<view class="kv_area areas">
+		<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+			<swiper-item>
+		      <navigator url="../mpp2/mpp2" bindtap="goToTrial3"><image src="http://dev.iprotime.com/public/dd/xcx/xcx03.jpg" mode="aspectFill"/></navigator>
+		    </swiper-item>
+			<swiper-item>
+		      <image src="http://dev.iprotime.com/xcx/images/el_kv_02.jpg" mode="aspectFill"/>
+		      <view class="play_video" bindtap="show_video">
+		      	<image src="http://dev.iprotime.com/xcx/images/player_btn.png"/>
+		      </view>
+		    </swiper-item>
+		    <swiper-item>
+		      <navigator url="../mpp2/mpp2" bindtap="goToTrial3"><image src="http://dev.iprotime.com/public/dd/xcx/xcx04.jpg" mode="aspectFill"/></navigator>
+		    </swiper-item>
+		</swiper>
+	</view>
+	<view class="pd_tabs_area areas">
+		<view class="pd_tabs">
+			<view class="{{pd_tab_01}}" bindtap="switch_tab_01">会员尊享</view>
+			<view class="{{pd_tab_02}}" bindtap="switch_tab_02">新品礼遇</view>
+		</view>
+		<view class="scroll_view {{for_tab_01}}">
+			<scroll-view class="pd_list" scroll-x="true">
+				<block wx:for="{{pds}}" wx:key="">
+		    		<view class="pd_item">
+		    			<navigator url="../spp/spp" bindtap="goToTrial2"><image src="{{item.pd_img}}" mode="aspectFill"/></navigator>
+		    			<text class="pd_name">{{item.pd_name}}</text>
+		    			<text class="pd_subname">（{{item.pd_subname}}）</text>
+		    			<text class="pd_price_content"><text class="pd_price">{{item.pd_price}}</text>／<text class="pd_content">{{item.pd_content}}</text></text>
+		    			<navigator class="check_detail" url="../spp/spp" bindtap="goToTrial2">加入礼单</navigator>
+					</view>
+		  		</block>
+			</scroll-view>
+			<!--
+			<view class="left_arrow {{left_show_01}}" style="display:none;">
+				<image src="http://dev.iprotime.com/xcx/images/el_index_arrow_left.png"/>
+			</view>
+			<view class="right_arrow {{right_show_01}}" style="display:none;">
+				<image src="http://dev.iprotime.com/xcx/images/el_index_arrow_right.png"/>
+			</view>
+			-->
+		</view>
+		<view class="scroll_view {{for_tab_02}}">
+			<scroll-view class="pd_list" scroll-x="true">
+				<block wx:for="{{pds2}}" wx:key="">
+		    		<view class="pd_item">
+		    			<navigator url="../spp/spp" bindtap="goToTrial2"><image src="{{item.pd_img}}" mode="aspectFill"/></navigator>
+		    			<text class="pd_name">{{item.pd_name}}</text>
+		    			<text class="pd_subname">（{{item.pd_subname}}）</text>
+		    			<text class="pd_price_content"><text class="pd_price">{{item.pd_price}}</text>／<text class="pd_content">{{item.pd_content}}</text></text>
+		    			<navigator class="check_detail" url="../spp/spp" bindtap="goToTrial2">查看详情</navigator>
+					</view>
+		  		</block>
+			</scroll-view>
+			<!--
+			<view class="left_arrow {{left_show_02}}" style="display:none;">
+				<image src="http://dev.iprotime.com/xcx/images/el_index_arrow_left.png"/>
+			</view>
+			<view class="right_arrow {{right_show_02}}" style="display:none;">
+				<image src="http://dev.iprotime.com/xcx/images/el_index_arrow_right.png"/>
+			</view>
+			-->
+		</view>
+	</view>
+	
+	<text class="praise_title">礼品筛选</text>
+	<view class="flist"><navigator url="../mpp2/mpp2" bindtap="goToTrial3"><text>3000积分</text><text class="fr">></text></navigator></view>
+	<view class="flist"><navigator url="../mpp2/mpp2" bindtap="goToTrial3"><text>5000积分</text><text class="fr">></text></navigator></view>
+	<view class="flist"><navigator url="../mpp2/mpp2" bindtap="goToTrial3"><text>8000积分</text><text class="fr">></text></navigator></view>
+	<!--
+	<view class="praise_area areas">
+		<text class="praise_title">口碑测评</text>
+		<view class="scroll_view">
+			<view class="praises_list">
+				<block wx:for="{{praises}}" wx:key="">
+		    		<view class="praise_item">
+			    		<navigator url="../spp/spp" bindtap="goToTrial2">
+			    			<image src="{{item.praise_img}}" mode="aspectFill"/>
+			    		</navigator>
+					</view>
+		  		</block>
+			</view>
+		</view>
+	</view>
+	<view class="trial_area areas">
+		<text class="trial_title">试享中心</text>
+		<view class="trial_post">
+			<navigator url="../trial/trial" bindtap="goToTrial4">
+				<image src="http://dev.iprotime.com/xcx/images/el_index_trial.jpg"/>
+			</navigator>
+		</view>
+	</view>
+	-->
+	<view class="praise_area areas">
+		<text class="praise_title">试用中心</text>
+		<view class="scroll_view">
+			<view class="praises_list">
+				    <view class="praise_item">
+			    		<navigator url="../trial2/trial2" bindtap="goToTrial4">
+			    			<image src="http://dev.iprotime.com/xcx/images/el_index_trial.jpg" mode="aspectFill"/>
+			    		</navigator>
+					</view>
+			</view>
+		</view>
+	</view>
+	<view class="video_layer {{video_show}}">
+		<video id="myVideo" class="myVideo" src="http://dev.iprotime.com/xcx/images/el_xcx_index.mp4"></video>
+		<view class="close_layer" bindtap="close_layer">
+			<image src="http://dev.iprotime.com/xcx/images/el_index_close.png" mode="aspectFill"/>
+		</view>
+	</view>
+</view>
