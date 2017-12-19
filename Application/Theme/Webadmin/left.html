@@ -1,0 +1,62 @@
+<div class="Webadmin_left">
+    <section class="user-sidebar">
+        <div class="user-sidebar-box user-account-nav">
+            <ul class="user-account-nav-list clearfix">
+                <li class="user-account-nav-list-item"><a class="user-account-nav-item"><i class="user-nav-main"></i><span>网站栏目</span> </a></li>
+                <!-- <li class="user-account-nav-list-item">
+                    <div class="user-account-nav-item">
+                        <i class="user-nav-message-manage"></i><span>服务类别管理</span>
+                    </div>
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#" target="_self" title="{$v['name']}">服务类别管理</a> 
+                        </li> 
+                    </ul>
+                </li> -->
+                <li class="user-account-nav-list-item">
+                    <a href="#" class="user-account-nav-item">
+                        <i class="user-nav-main"></i>
+                        <span>服务类别管理</span>
+                    </a>
+                </li>
+                <li class="user-account-nav-list-item">
+                    <a href="#" class="user-account-nav-item">
+                        <i class="user-nav-main"></i>
+                        <span>预约管理</span>
+                    </a>
+                </li>
+                <li class="user-account-nav-list-item">
+                    <a href="#" class="user-account-nav-item">
+                        <i class="user-nav-main"></i>
+                        <span>问题反馈</span>
+                    </a>
+                </li>
+                <!-- 管理员权限 -->
+                <if condition="$_SESSION['role'] eq admin">
+                    <li class="user-account-nav-list-item">
+                        <a href="#" class="user-account-nav-item">
+                            <i class="user-nav-main"></i>
+                            <span>用户管理</span>
+                        </a>
+                    </li>
+                    <!-- <li class="user-account-nav-list-item">
+                        <div class="user-account-nav-item">
+                            <i class="user-nav-message-manage"></i><span>超级管理员</span>
+                        </div>
+                        <ul class="clearfix">
+                            <if condition="($_SESSION['uname'] eq 'admin') or ($_SESSION['uname'] eq 'lndx2016')">
+                            <li>
+                                <a href="{:U('Webadmin/article/lists',array('id'=>$v['id']))}" target="_self" title="">栏目管理</a> 
+                            </li> 
+                            </if>
+                            <li>
+                                <a href="{:U('Webadmin/user/lists',array('id'=>$v['id']))}" target="_self" title="">用户管理</a> 
+                            </li> 
+                        </ul>
+                    </li> -->
+                </if>
+                
+            </ul>
+        </div>
+    </section>
+</div>

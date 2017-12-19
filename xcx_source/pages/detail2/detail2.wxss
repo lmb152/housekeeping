@@ -1,0 +1,33 @@
+/**detail.wxss**/
+page{ width:100%; height:100%; overflow: hidden;}
+.main_body{ width:100%; margin: 0 auto;}
+swiper{ width:100%; overflow: hidden; height: 907rpx;}
+swiper-item{ width:750rpx; height: 907rpx;}
+swiper-item image{ display:block; width:618rpx; height: 907rpx; margin: 0 auto;}
+.det_main.last{ height:1057rpx}
+.det_main image{ width:618rpx; height:907rpx; margin: 0 auto; display: block;}
+.bottom_bar{ width:100%; height:520rpx; position:fixed; left:0; bottom:-370rpx; background:#fff; border-top: 1px solid #3c6432;}
+.bottom_bar_top{ width:100%; height:150rpx;}
+.buy_btn{ position: absolute; width:109rpx; height:88rpx; right: 30rpx; top: 30rpx;}
+.buy_btn image{ width:109rpx; height:88rpx;}
+.bottom_bar .det_info text{ font-size: 36rpx; line-height:40rpx; padding-left: 30rpx; display:table;}
+.bottom_bar text.price{ font-size: 32rpx; padding-top: 10rpx;}
+.det_info{ display:table; padding-top:10rpx;}
+.bottom_bar_size{ margin-top: 20rpx; padding-left: 30rpx;}
+.bottom_bar_size .choose_size{ font-size: 32rpx;}
+.bottom_bar_size .choose_size_items{ margin-top: 10rpx; display: table;}
+.bottom_bar_size .choose_size_items text{ display: table; float: left; padding: 5rpx 20rpx; font-size: 30rpx; border: 1px solid #3c6432; border-radius: 10rpx; margin-right: 20rpx; background-color: #fff; line-height: 30rpx;}
+.bottom_bar_amount{ padding-left: 30rpx; padding-bottom: 20rpx;}
+.bottom_bar_amount .choose_amount{ font-size: 32rpx;}
+.bottom_bar_amount .choose_amount_items{ margin-top: 10rpx; display: table;}
+.bottom_bar_amount .choose_amount_items text{ display: table; float: left; width: 60rpx; height: 50rpx; border: 1px solid #3c6432; line-height: 50rpx; text-align: center; font-size: 32rpx; color: #3c6432; box-sizing: border-box;}
+.bottom_bar_amount .choose_amount_items text.amount{ border:none; border-top: 1px solid #3c6432; border-bottom: 1px solid #3c6432;}
+.add_to_bag,.go_trial{ width: 500rpx; height: 75rpx; margin: 30rpx auto 0; background: #3c6432;}
+.add_to_bag text{ display: block; width: 100%; height:100%; text-align: center; line-height: 75rpx; color: #fff;}
+.go_trial navigator{ display: block; width: 100%; height:100%; text-align: center; line-height: 75rpx; color: #fff;}
+.button-hover{ background-color: #3c6432; opacity: 1; color: #fff;}
+.blocks{ width: 100%; position: relative;}
+.block_01 image{ display:block; width: 750rpx; height: 1220rpx;}
+.block_02 image{ display:block; width: 750rpx; height: 986rpx;}
+.block_03 image{ display:block; width: 750rpx; height: 1187rpx;}
+.video{ position: absolute; display: block; width: 680rpx; height: 420rpx; left: 35rpx; top: 25%;}

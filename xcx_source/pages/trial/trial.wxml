@@ -1,0 +1,43 @@
+<!--map.wxml-->
+<view class="page">
+	<view class="blocks block_01">
+		<image src="http://dev.iprotime.com/xcx/images/lamer_02_1.jpg" mode="aspectFill"></image>
+	</view>
+	<view class="blocks block_02">
+		<image src="http://dev.iprotime.com/xcx/images/lamer_03_1.jpg" mode="aspectFill"></image>
+		<view class="form_area">
+			<input class="name" type="text" placeholder="姓名" bindinput="bind_name" placeholder-class="placeholder"/>
+			<input class="mobile" type="text" placeholder="手机号" bindinput="bind_mobile" placeholder-class="placeholder"/>
+			<input class="email" type="text" placeholder="邮箱" bindinput="bind_email" placeholder-class="placeholder"/>
+			<picker class="city" bindchange="bind_city" value="{{city_index}}" range="{{city_array}}">
+				<view class="picker">
+					{{city_array[city_index]}}
+				</view>
+			</picker>
+			<picker class="store" bindchange="bind_store" value="{{store_index}}" range="{{store_array}}">
+				<view class="picker">
+					{{store_array[store_index]}}
+				</view>
+			</picker>
+			<text class="check_route" bindtap="check_route">查看专柜路线</text>
+			<view class="agreement" bindtap="agreement">
+				<view class="is_or_no"><image src="{{is_or_no}}"></image></view><text>同意品牌对于本人个人信息的收集，并同意接受品牌发送的商业信息，若拒绝收到品牌发送的商业信息，请取消打勾。</text>
+			</view>
+			<text class="submit" bindtap="confirm_submit">确认提交</text>
+		</view>
+	</view>
+	<view class="blocks block_03">
+		<image src="http://dev.iprotime.com/xcx/images/lamer_04_1.jpg" mode="aspectFill"></image>
+	</view>
+	<view class="blocks block_04">
+		<image src="http://dev.iprotime.com/xcx/images/lamer_05_1.jpg" mode="aspectFill"></image>
+	</view>
+	<view class="blocks block_05">
+		<image src="http://dev.iprotime.com/xcx/images/lamer_06_1.jpg" mode="aspectFill"></image>
+		<video class="video" src="http://dev.iprotime.com/xcx/images/video.mp4"></video>
+	</view>
+	<view class="blocks block_06">
+		<image src="http://dev.iprotime.com/xcx/images/lamer_07_1.jpg" mode="aspectFill"></image>
+	</view>
+</view>
+

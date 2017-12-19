@@ -1,0 +1,133 @@
+.all{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:url(http://dev.iprotime.com/public/dd/mybg.jpg) no-repeat;
+  background-size:100% auto;
+}
+.top_cart{
+	width:100%;
+	height:450rpx;
+	position:fixed;
+	background:#fff;
+	z-index:2;
+	top:-450rpx;
+	background:url(http://dongdong@dev.iprotime.com/public/dd/cart-null.png) no-repeat;
+	background-color:#fff;
+	background-position:50% 50%;
+}
+.top_cart swiper-item{
+	background:#fff;
+}
+.top_cartbg{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:-100%;
+	z-index:1;
+	background:#999;
+	opacity:0.2;
+}
+.top_cart image{
+	width:222rpx;
+	height:288rpx;
+	position:relative;
+	left:50%;
+	margin-left:-111rpx;
+}
+.top_cart .cartitme_title{
+	width:100%;
+	text-align:center;
+	font-size:14px;
+	line-height:24px;
+}
+
+.container {
+  position:absolute;
+  width:100%;
+  height:auto;
+  display:inline-block;
+  top:0;
+}
+.cart_icon{
+	position:fixed;
+	top:10px;
+	right:10px;
+	width:50.25rpx;
+	height:50rpx;
+	text-align:center;
+	z-index:3;
+}
+.cart_icon image{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.cart_num{
+	color:#ccc;
+	font-size:12px;
+}
+.choice_box .choice_list{
+	flex-direction: column;
+	position:relative;
+	top:0;
+}
+.choice_item{
+	flex-direction: row;
+	border-bottom:1px dashed #9f9f9f;
+	width:95%;
+	margin:5px auto 5px;
+	position:relative;
+}
+.choice_item .item_img{
+	width:296rpx;
+	height:384rpx;
+	float:left;
+}
+.choice_item .item_info{
+	position:relative;
+	width:50%;
+	flex-direction: column;
+	float:right;
+	color:#ccc;
+	font-size:14px;
+	margin-top:35px;
+	margin-left:20px;
+}
+.choice_item .item_info .item_name{
+	line-height:150%;
+}
+.choice_item .item_info .item_pion{
+	line-height:250%;
+	font-family:'Helvetica';
+}
+.choice_item .item_info .addcart{
+	width:100px;
+	height:30px;
+	border:1px solid #9f9f9f;
+	line-height:30px;
+	text-align:center;
+	margin-top:15px;
+}
+.loading{
+	width:100%;
+	height:60px;
+	line-height:60px;
+	color:#9f9f9f;
+	text-align:center;
+	font-size:14px;
+	opacity:0;
+}
+.loadingimg{
+	display: inline-block;
+    height: 14px;
+    width: 14px;
+    border-radius: 100%;
+    margin: 6px;
+    margin-top:5px;
+    border: 1px solid #9f9f9f;
+    border-bottom-color: transparent;
+    vertical-align: middle;
+}

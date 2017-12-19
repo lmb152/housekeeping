@@ -1,0 +1,46 @@
+<!--detail.wxml-->
+<block wx:for="{{detail_data}}">
+  <view wx:if="{{index==id}}" class="main_body">
+  	<view class="blocks block_01">
+		<image src="http://dev.iprotime.com/xcx/images/lamer_detail_kv2.jpg" mode="aspectFill"></image>
+	</view>
+  	<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+	  <block wx:for="{{item.detail_kvs}}">
+	    <swiper-item>
+	      <image src="{{item.img_src}}" mode="aspectFit"/>
+	    </swiper-item>
+	  </block>
+	</swiper>
+	<view class="blocks block_02">
+		<image src="http://dev.iprotime.com/xcx/images/lamer_mob_0919_05.jpg" mode="aspectFill"></image>
+	</view>
+	<view class="blocks block_03">
+		<image src="http://dev.iprotime.com/xcx/images/lamer_mob_0919_06.jpg" mode="aspectFill"></image>
+	</view>
+	<view class="bottom_bar" animation="{{bottom_bar}}">
+		<view class="bottom_bar_top">
+		 <view class="det_info">
+			 <text>{{item.detail_name}}\n</text>
+			 <text>{{item.detail_style}}\n</text>
+			 <text class="price">{{item.detail_price}}</text>
+		 </view>
+		 <view class="buy_btn" bindtap="showChoices">
+		 	<image src="{{turn_img}}"/>
+		 </view>
+		</view>
+		<view class="bottom_bar_amount">
+			<text class="choose_amount">选择数量</text>
+			<view class="choose_amount_items">
+				<text bindtap="reduce_amount">-</text><text class="amount">{{goods_amount}}</text><text bindtap="increase_amount">+</text>
+			</view>
+		</view>
+		<view class="add_to_bag">
+			<text>加入购物车</text>
+		</view>
+		<view class="go_trial">
+			<navigator url="../trial/trial">试用申请</navigator>
+		</view>
+	</view>
+  </view>
+  
+</block>
