@@ -28,7 +28,7 @@
       "selectedIconPath": "image/首页选中.png",
       "text": "首页"
     },{
-      "pagePath": "page/mpp/mpp",
+      "pagePath": "page/profile/profile",
       "iconPath": "image/个人中心未选中.png",
       "selectedIconPath": "image/个人选中.png",
       "text": "个人中心"
@@ -40,5 +40,5 @@
     "uploadFile": 10000,
     "downloadFile": 10000
   },
-  "debug": false
+  "debug": true
 }
