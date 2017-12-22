@@ -1,126 +1,41 @@
-<view class="cartTop" animation="{{topcart}}">
-	<swiper indicator-dots="true" interval="2000" duration="500" circular="true" style="border:none;">
-		    <swiper-item>
-		      <image src="http://dev.iprotime.com/xcx/images/image/spppic1.jpg" mode="aspectFit"/>
-		    </swiper-item>
-		    <swiper-item>
-		      <image src="http://dev.iprotime.com/xcx/images/image/pic2.jpg" mode="aspectFit"/>
-		    </swiper-item>
-		    <swiper-item>
-		      <image src="http://dev.iprotime.com/xcx/images/image/pic3.jpg" mode="aspectFit"/>
-		    </swiper-item>
-	</swiper>
-	<view class="cart"><image src="http://dev.iprotime.com/xcx/images/image/cart.png" mode="widthFix"></image><text>兑礼清单</text></view>
-</view>
-<view class="huiceng" animation="{{topcartbg}}" bindtap="hiddencart"></view>
-
-<view class="fenleiicon" bindtap="fenleilist" style="display:{{showhide}}"><image src="../../image/fenleixicon.jpg" mode="widthFix"></image></view>
-<scroll-view class="fenleilist" animation="{{fenlei}}" scroll-y="true">
-	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">面膜</text><text class="text2">></text></view></navigator>
-	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">清洁</text><text class="text2">></text></view></navigator>
-	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">特殊护理</text><text class="text2">></text></view></navigator>
-	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">滋润</text><text class="text2">></text></view></navigator>
-	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">保湿</text><text class="text2">></text></view></navigator>
-	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">眼部护理</text><text class="text2">></text></view></navigator>
-	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">美白</text><text class="text2">></text></view></navigator>
-	<navigator url="../mpp2/mpp2" bindtap="goToTrial3"><view><text class="text1">特别护理or面膜</text><text class="text2">></text></view></navigator>
-</scroll-view>
-<view class="huiceng2" animation="{{fenleibg}}" bindtap="hiddenfenleilist"></view>
-
-
-<view class="Tophead">
-	<view class="fenlei" bindtap="fenleilist"><image src="http://dev.iprotime.com/xcx/images/image/fenlei.png" mode="widthFix"></image></view>
-	<text>|</text>
-	<view class="logo"><image src="http://dev.iprotime.com/xcx/images/image/logo.png" mode="widthFix"></image></view>
-	<text>|</text>
-	<view class="cart" bindtap="showaddcart"><image src="http://dev.iprotime.com/xcx/images/image/cart.png" mode="widthFix"></image></view>
-</view>
-
 <view class="page" style="position:{{pageshow}}">
-<view class="sppct">
-	<swiper indicator-dots="true" autoplay="true" interval="2000" duration="500" circular="true">
-		    <swiper-item>
-		      <image src="http://dev.iprotime.com/xcx/images/image/spppic1.jpg" mode="widthFix"/>
-		    </swiper-item>
-		    <swiper-item>
-		      <image src="http://dev.iprotime.com/xcx/images/image/spppic1.jpg" mode="widthFix"/>
-		    </swiper-item>
-		    <swiper-item>
-		      <image src="http://dev.iprotime.com/xcx/images/image/spppic1.jpg" mode="widthFix"/>
-		    </swiper-item>
-	</swiper>
+<view class="biaoti">
+	<view class="title">
+		<view class="service_left"></view>
+		<text class="service_title">服务标准</text>
+	</view>
+</view>
+<view class="pd_tabs_area areas">
+	<block wx:for="{{standard_data}}" wx:key="">
+		<view class="pd_item">
+			<image src="{{item.img_src}}" mode="aspectFit"/>
+			<!-- <view class="standard_name">{{item.name}}</view>
+			<text class="standard_detail">{{item.detail}}</text> -->
+		</view>
+	</block>
 </view>
 <view class="biaoti">
 	<view class="title">
-		<view>特润修护肌透精华露（第六代小棕瓶）</view>
-		<text>Advanced Night Repair</text>
+		<view class="service_left"></view>
+		<text class="service_title">服务保障</text>
 	</view>
-	<view class="addcart_spp"><image src="http://dev.iprotime.com/xcx/images/image/add1.png" mode="widthFix"></image></view>
 </view>
-<view class="gongxiao">
-	<view>功效</view>
-	<view>彻夜清空累积损伤，强化夜间巅峰修护力，肌肤深透滋养！</view>
-</view>
-<view class="threebtn" style="display:none;">
-	<view class="btn1">图文详情</view>
-	<view class="btn2 btnpace">评价</view>
-	<view class="btn2">达人评测</view>
-</view>
-<view class="sppad">
-	<image src="http://dev.iprotime.com/xcx/images/image/spppic2.jpg" mode="widthFix"></image>
+<view class="pd_protection">
+	<block wx:for="{{protection_data}}" wx:key="">
+		<view class="protection_item">
+			<view class="protection_img"><image src="{{item.img_src}}" mode="aspectFit"/></view>
+			<view class="protection_name">{{item.name}}</view>
+			<text class="protection_detail">{{item.detail}}</text>
+		</view>
+	</block>
 </view>
 <view class="morespp">
-	<navigator url="../mpp2/mpp2" bindtap="goToTrial3">查看更多</navigator>
-</view>
-<view class="tiezi" style="display:none;">
-	<view class="tietitle">精华帖</view>
-	<view class="tiectlist">
-		<view class="tiect">
-			<view class="tiepic"><image src="http://dev.iprotime.com/xcx/images/image/spppic3.jpg" mode="widthFix"></image></view>
-			<view class="tietext">每个帖子显示前50个文字描述...</view>
-			<view class="tieren">发帖人：<text>雅诗兰黛</text></view>
-			<view class="tiebt"><image src="http://dev.iprotime.com/xcx/images/image/spppic4.jpg" mode="widthFix"></image></view>
-		</view>
-		<view class="tiect">
-			<view class="tiepic"><image src="http://dev.iprotime.com/xcx/images/image/spppic3.jpg" mode="widthFix"></image></view>
-			<view class="tietext">每个帖子显示前50个文字描述...</view>
-			<view class="tieren">发帖人：<text>雅诗兰黛</text></view>
-			<view class="tiebt"><image src="http://dev.iprotime.com/xcx/images/image/spppic4.jpg" mode="widthFix"></image></view>
-		</view>
-		<view style="clear:both;"></view>
-	</view>
-</view>
-<view class="morespp" style="display:none;">
-	<navigator url="../mpp2/mpp2" bindtap="goToTrial3">查看更多帖子</navigator>
-</view>
-<view class="tiezi">
-	<view class="tietitle">热门推荐</view>
-</view>
-<view class="scroll_list"> 
-  <view class="pctlist">
-  <block wx:for="{{itemarray}}" wx:key="">
-  	<view class="pctinfo" wx:if="{{item.itemtype==0}}">
-<view class="imgsize"><image src="http://dev.iprotime.com/xcx/images/image/pctpic{{item.imgurl}}.jpg" mode="widthFix"></image></view>
-	  	<view class="pcttitle">{{item.itemname}}</view>
-	  	<view class="stitle">{{item.itemsname}}</view>
-	  	<view class="price"><text>{{item.price}}</text>/<text>{{item.pointinfo}}</text>ml</view>
-	  	<view class="addbutton"><icon><image src="{{item.addimgurl}}" mode="widthFix"></image></icon><view class="button2">即将发布</view></view>
-  	</view>
-  	<view class="pctinfo" wx:else>
-	  	<view class="imgsize"><image src="http://dev.iprotime.com/xcx/images/image/pctpic{{item.imgurl}}.jpg" mode="widthFix"></image></view>
-	  	<view class="pcttitle">{{item.itemname}}</view>
-	  	<view class="stitle">{{item.itemsname}}</view>
-	  	<view class="price"><text>{{item.price}}</text>/<text>{{item.pointinfo}}</text>ml</view>
-	  	<view class="addbutton"><icon><image src="{{item.addimgurl}}" mode="widthFix"></image></icon><view class="button">加入礼单</view></view>
-  	</view>
-  </block>
-  <view style="clear:both;"></view>
-  </view>  
+	<navigator url="../reservation/reservation" bindtap="goToTrial3">立即预约</navigator>
 </view>
 <view style="clear:both;"></view>
 </view>
 
-<view class="bottom_bar" animation="{{bottom_bar}}">
+<!-- <view class="bottom_bar" animation="{{bottom_bar}}">
 		<view class="bottom_bar_top">
 		 <view class="det_info">
 			 <text>浓缩修护眼部精华霜\n</text>
@@ -143,4 +58,4 @@
 		<view class="go_trial">
 			<navigator url="../trial/trial">试用申领</navigator>
 		</view>
-</view>
+</view> -->

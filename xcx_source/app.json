@@ -4,6 +4,7 @@
   	"page/pano/pano",
   	"page/club/club",
   	"page/spp/spp",
+    "page/reservation/reservation",
   	"page/mpp/mpp",
   	"page/mpp2/mpp2",
   	"page/trial/trial",
@@ -12,36 +13,25 @@
   ],
   "window": {
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "雅诗兰黛",
+    "navigationBarTitleText": "XX家政",
     "navigationBarBackgroundColor": "#060a2d",
     "backgroundColor": "#fbf9fe"
   },
   "tabBar":{
-    "color": "#09092b",
-    "selectedColor": "#09092b",
+    "color": "#666666",
+    "selectedColor": "#ec5024",
     "borderStyle": "white",
-    "backgroundColor": "#fbf9fe",
+    "backgroundColor": "#ffffff",
     "list": [{
       "pagePath": "page/index/index",
-      "iconPath": "image/bar_index_off.png",
-      "selectedIconPath": "image/bar_index_on.png",
+      "iconPath": "image/首页未选中.png",
+      "selectedIconPath": "image/首页选中.png",
       "text": "首页"
     },{
       "pagePath": "page/mpp/mpp",
-      "iconPath": "image/bar_index3.png",
-      "selectedIconPath": "image/bar_index3.png",
-      "text": "会员尊享"
-    },{
-      "pagePath": "page/trial/trial",
-      "iconPath": "image/bar_index4.png",
-      "selectedIconPath": "image/bar_index4.png",
-      "text": "试用申领"
-    },
-    {
-      "pagePath": "page/map/map",
-      "iconPath": "image/bar_index2.png",
-      "selectedIconPath": "image/bar_index2.png",
-      "text": "专柜查询"
+      "iconPath": "image/个人中心未选中.png",
+      "selectedIconPath": "image/个人选中.png",
+      "text": "个人中心"
     }]
   },
   "networkTimeout": {

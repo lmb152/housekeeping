@@ -1,0 +1,61 @@
+<view class="page" style="position:{{pageshow}}">
+<view class="biaoti">
+	<view class="title">
+		<view class="service_left"></view>
+		<text class="service_title">服务标准</text>
+	</view>
+</view>
+<view class="pd_tabs_area areas">
+	<block wx:for="{{standard_data}}" wx:key="">
+		<view class="pd_item">
+			<image src="{{item.img_src}}" mode="aspectFit"/>
+			<!-- <view class="standard_name">{{item.name}}</view>
+			<text class="standard_detail">{{item.detail}}</text> -->
+		</view>
+	</block>
+</view>
+<view class="biaoti">
+	<view class="title">
+		<view class="service_left"></view>
+		<text class="service_title">服务保障</text>
+	</view>
+</view>
+<view class="pd_protection">
+	<block wx:for="{{protection_data}}" wx:key="">
+		<view class="protection_item">
+			<view class="protection_img"><image src="{{item.img_src}}" mode="aspectFit"/></view>
+			<view class="protection_name">{{item.name}}</view>
+			<text class="protection_detail">{{item.detail}}</text>
+		</view>
+	</block>
+</view>
+<view class="morespp">
+	<navigator url="../mpp2/mpp2" bindtap="goToTrial3">立即预约</navigator>
+</view>
+<view style="clear:both;"></view>
+</view>
+
+<!-- <view class="bottom_bar" animation="{{bottom_bar}}">
+		<view class="bottom_bar_top">
+		 <view class="det_info">
+			 <text>浓缩修护眼部精华霜\n</text>
+			 <text>淡化纹路 焕亮眼周\n</text>
+			 <text class="price">2000积分</text>
+		 </view>
+		 <view class="buy_btn" bindtap="showChoices">
+		 	<image src="http://dev.iprotime.com/xcx/images/image/addcartspp.jpg"/>
+		 </view>
+		</view>
+		<view class="bottom_bar_amount">
+			<text class="choose_amount">选择数量</text>
+			<view class="choose_amount_items">
+				<text bindtap="reduce_amount">-</text><text class="amount">{{goods_amount}}</text><text bindtap="increase_amount">+</text>
+			</view>
+		</view>
+		<view class="add_to_bag">
+			<text>加入礼单</text>
+		</view>
+		<view class="go_trial">
+			<navigator url="../trial/trial">试用申领</navigator>
+		</view>
+</view> -->

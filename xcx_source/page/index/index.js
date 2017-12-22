@@ -21,7 +21,7 @@ Page({
 	    pds:[
 	    	{
 	    		id:0,
-	    		pd_img:'http://dev.iprotime.com/xcx/images/el_index_pd_01.jpg',
+	    		pd_img:'/image/保洁服务.png',
 	    		pd_name: '肌初赋活原生液',
 	    		pd_subname: '微精华原生液',
 	    		pd_price: '420积分',
@@ -29,7 +29,7 @@ Page({
 	    	},
 	    	{
 	    		id:1,
-	    		pd_img:'http://dev.iprotime.com/xcx/images/el_index_pd_02.jpg',
+	    		pd_img:'/image/保姆服务.png',
 	    		pd_name: '特润修护肌透精华露',
 	    		pd_subname: '第六代小棕瓶',
 	    		pd_price: '420积分',
@@ -37,7 +37,7 @@ Page({
 	    	},
 	    	{
 	    		id:2,
-	    		pd_img:'http://dev.iprotime.com/xcx/images/image/pctpic3.jpg',
+	    		pd_img:'/image/做饭钟点工.png',
 	    		pd_name: '肌初赋活原生液',
 	    		pd_subname: '微精华原生液',
 	    		pd_price: '420积分',
@@ -45,7 +45,7 @@ Page({
 	    	},
 	    	{
 	    		id:3,
-	    		pd_img:'http://dev.iprotime.com/xcx/images/el_index_pd_02.jpg',
+	    		pd_img:'/image/特色服务.png',
 	    		pd_name: '特润修护肌透精华露',
 	    		pd_subname: '第六代小棕瓶',
 	    		pd_price: '420积分',
@@ -299,8 +299,7 @@ Page({
 	},
 	onShareAppMessage: function () {
 	    return {
-	      title: '雅诗兰黛',
-	      desc: '个人中心',
+	      title: 'XX家政',
 	      path: '/page/index/index'
 	    }
 	}
